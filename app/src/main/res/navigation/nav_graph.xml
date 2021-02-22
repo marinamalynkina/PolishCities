@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/CitiesWithDetailsFragment">
+
+    <fragment
+        android:id="@+id/CitiesListFragment"
+        android:name="com.malynkina.polishcities.feature.citieslist.ui.CitiesListFragment"
+        android:label="CitiesListFragment"
+        tools:layout="@layout/feature_citieslist"/>
+
+    <action
+            android:id="@+id/action_showdetails"
+            app:destination="@id/CityDetailsMapFragment" />
+    <fragment
+        android:id="@+id/CityDetailsMapFragment"
+        android:name="com.malynkina.polishcities.feature.citydetailsmap.ui.CityDetailsMapFragment"
+        android:label="CityDetailsMapFragment"
+        tools:layout="@layout/feature_city_details_map"/>
+
+
+    <fragment
+            android:id="@+id/CitiesWithDetailsFragment"
+            android:name="com.malynkina.polishcities.feature.citieswithdetails.ui.CitiesWithDetailsFragment"
+            android:label="CitiesWithDetailsFragment"
+            tools:layout="@layout/feature_citieswithdetails"/>
+
+</navigation>

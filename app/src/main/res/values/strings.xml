@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Polish Cities</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="feature_splash_create_by">Created by Marina Malynkina</string>
+	<string name="feature_citieswithdetails_emptymap">Choose city to see Map</string>
+</resources>
